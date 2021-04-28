@@ -5,7 +5,12 @@ Here is the app code of the AntMonitor Federated privacy assistant Android app.
 
 ### App report:
 
-![App image](foto_marca.jpg)  <img src="https://github.com/alejandroaguileraalcalde-ing/AntMonitor-Federated-app/blob/main/foto2antmonitor_realtime.PNG" width="300">
+<p float="left">
+ <img src="https://github.com/alejandroaguileraalcalde-ing/AntMonitor-Federated-app/blob/main/foto_marca.jpg" width="300">
+  <img src="https://github.com/alejandroaguileraalcalde-ing/AntMonitor-Federated-app/blob/main/foto_marca2.jpg" width="300">
+ 
+</p>
+
 
 ### Real time conexions:
 
