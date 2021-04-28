@@ -1,11 +1,11 @@
 # AntMonitor-Federated-app
-Here is the app code of the AntMonitor Federated privacy assistant Android app
+Here is the app code of the AntMonitor Federated privacy assistant Android app.
 
 #  How it works:
 
 ### App report:
 
-![App image](foto_marca.PNG)
+![App image](foto_marca.jpg)
 
 ### Real time conexions:
 
@@ -14,7 +14,7 @@ Here is the app code of the AntMonitor Federated privacy assistant Android app
 
 ### Block any personal data:
 
-  ![App image](foto2antmonitor_realtime.PNG)
+  ![App image](foto_permitir.jpg)
   
 
 ### References: 
