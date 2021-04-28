@@ -1,0 +1,2 @@
+model_checkpoint_path: "/content/sample_data/h/checkpoint_name_Ant_v13.ckpt"
+all_model_checkpoint_paths: "/content/sample_data/h/checkpoint_name_Ant_v13.ckpt"
