@@ -9,7 +9,7 @@ Here is the app code of the AntMonitor Federated privacy assistant Android app.
 
 ### Real time conexions:
 
-![App image](foto2antmonitor_realtime.PNG)
+![App image](foto2antmonitor_realtime.PNG width="52")
 
 
 ### Block any personal data:
