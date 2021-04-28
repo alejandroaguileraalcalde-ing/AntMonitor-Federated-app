@@ -9,12 +9,13 @@ Here is the app code of the AntMonitor Federated privacy assistant Android app.
 
 ### Real time conexions:
 
-![App image](foto2antmonitor_realtime.PNG | width=100)
 
+<img src="https://github.com/alejandroaguileraalcalde-ing/AntMonitor-Federated-app/blob/main/foto2antmonitor_realtime.PNG" width="100">
 
 ### Block any personal data:
 
-  ![App image](foto_permitir.jpg)
+ 
+  <img src="https://github.com/alejandroaguileraalcalde-ing/AntMonitor-Federated-app/blob/main/foto_permitir.jpg" width="100">
   
 
 ### References: 
