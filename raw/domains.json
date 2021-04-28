@@ -1,0 +1,16 @@
+[
+    {
+      "packageName": "com.android.providers.downloads",
+      "domains": ["*.google.com", "*.c.docs.google.com"]
+    },
+
+    {
+      "packageName": "com.android.vending",
+      "domains": ["*.google.com", "*.googleusercontent.com", "*.googleapis.com"]
+    },
+
+    {
+      "packageName": "com.facebook.katana",
+      "domains": ["*.facebook.com"]
+    }
+]

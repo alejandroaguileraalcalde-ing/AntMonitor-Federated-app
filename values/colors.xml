@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  This file is part of AntMonitor <https://athinagroup.eng.uci.edu/projects/antmonitor/>.
+  ~  Copyright (C) 2018 Anastasia Shuba and the UCI Networking Group
+  ~  <https://athinagroup.eng.uci.edu>, University of California, Irvine.
+  ~
+  ~  AntMonitor is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, version 2 of the License.
+  ~
+  ~  AntMonitor is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with AntMonitor. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimary1">#3F51B5</color>
+    <color name="colorPrimaryDark1">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dark_blue">#3023AE</color>
+    <color name="purple">#c86dd7</color>
+    <color name="verde">#8BC34A</color>
+    <color name="naranja">#FFC107</color>
+    <color name="rojo">#FA6459</color>
+    <color name="negro">#070707</color>
+    <color name="buttonColor">#03A9F4</color>
+</resources>
