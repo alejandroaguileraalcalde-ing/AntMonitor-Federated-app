@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uci.calit2.federated.client.android.activity.MasInformacion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="6dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="More Information:"
+        android:layout_below="@id/volver"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/subtitulo"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginStart="7dp"
+            android:layout_below="@id/titulo"
+            android:text="Set the exposed data weights on a scale of '1' to '10', where '10' is very sensitive data and '1' the opposite"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginLeft="7dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tercertitulo"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@id/subtitulo"
+            android:layout_marginStart="5dp"
+            android:text="Currently exposed data weights:"
+            android:textAlignment="center"
+
+            android:textColor="@android:color/black"
+            android:textSize="19dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="5dp" />
+        <TextView
+            android:id="@+id/nuevoValor"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@id/subtitulo"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/tercertitulo"
+            android:text="New Value"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@id/tercertitulo" />
+
+
+        <TextView
+            android:id="@+id/location_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@id/tercertitulo"
+            android:text="-Location Weight= "
+            android:textAlignment="center"
+            android:layout_marginStart="12dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="12dp" />
+        <TextView
+            android:id="@+id/email_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@id/location_text"
+            android:text="-Email Weight= "
+            android:textAlignment="center"
+            android:layout_marginStart="12dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="12dp" />
+        <TextView
+            android:id="@+id/device_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@id/email_text"
+            android:text="-DeviceID Weight= "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/imei_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@id/device_text"
+            android:text="-Imei Weight= "
+            android:textAlignment="center"
+            android:layout_marginStart="12dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="12dp" />
+        <TextView
+            android:id="@+id/serialnumber_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@id/imei_text"
+            android:text="-Serial Number Weight= "
+            android:textAlignment="center"
+            android:layout_marginStart="12dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="12dp" />
+        <TextView
+            android:id="@+id/macaddress_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@id/serialnumber_text"
+            android:text="-Mac Address Weight= "
+            android:textAlignment="center"
+            android:layout_marginStart="12dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="12dp" />
+        <TextView
+            android:id="@+id/advertiser_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@id/macaddress_text"
+            android:text="-Advertiser ID Weight= "
+            android:textAlignment="center"
+            android:layout_marginStart="12dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="12dp" />
+
+
+        <SeekBar
+            android:id="@+id/location_input"
+            android:layout_width="400dp"
+
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tercertitulo"
+            android:layout_toEndOf="@id/location_text"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="117dp"
+            android:ems="10"
+            android:hint="-"
+            android:textAlignment="center"
+            android:layout_toRightOf="@id/location_text"
+            android:layout_marginLeft="65dp"
+            android:gravity="center_horizontal" />
+        <SeekBar
+            android:id="@+id/email_input"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/location_text"
+            android:layout_toEndOf="@id/email_text"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="140dp"
+            android:ems="10"
+            android:hint="-"
+            android:textAlignment="center"
+            android:layout_toRightOf="@id/email_text"
+            android:layout_marginLeft="92dp"
+            android:gravity="center_horizontal" />
+        <SeekBar
+            android:id="@+id/device_input"
+            android:layout_width="400dp"
+            android:layout_marginStart="130dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/email_text"
+            android:layout_toEndOf="@id/device_text"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="-"
+            android:textAlignment="center"
+            android:layout_marginLeft="65dp"
+            android:layout_toRightOf="@id/device_text"
+            android:gravity="center_horizontal" />
+        <SeekBar
+            android:id="@+id/imei_input"
+            android:layout_width="4000dp"
+            android:layout_marginStart="175dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/device_text"
+            android:layout_toEndOf="@id/imei_text"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="-"
+            android:textAlignment="center"
+            android:layout_marginLeft="104dp"
+            android:layout_toRightOf="@id/imei_text"
+            android:gravity="center_horizontal" />
+        <SeekBar
+            android:id="@+id/serialnumber_input"
+            android:layout_width="400dp"
+            android:layout_marginStart="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imei_text"
+            android:layout_toEndOf="@id/serialnumber_text"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="-"
+            android:textAlignment="center"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/serialnumber_text"
+            android:gravity="center_horizontal" />
+        <SeekBar
+            android:id="@+id/macaddress_input"
+            android:layout_width="400dp"
+            android:layout_marginStart="90dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/serialnumber_text"
+            android:layout_toEndOf="@id/macaddress_text"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="-"
+            android:textAlignment="center"
+            android:layout_marginLeft="27dp"
+            android:layout_toRightOf="@id/macaddress_text"
+            android:gravity="center_horizontal" />
+        <SeekBar
+            android:id="@+id/advertiser_input"
+            android:layout_width="400dp"
+            android:layout_marginStart="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/macaddress_text"
+            android:layout_toEndOf="@id/advertiser_text"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="-"
+            android:textAlignment="center"
+            android:layout_marginLeft="33dp"
+            android:layout_toRightOf="@id/advertiser_text"
+            android:gravity="center_horizontal" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/advertiser_input"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="@color/buttonColor"
+            android:background="@drawable/stilo_button_redondo"
+            android:text="Save" />
+        <Button
+            android:id="@+id/volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:textSize="15dp"
+
+
+            android:text="Back" />
+
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

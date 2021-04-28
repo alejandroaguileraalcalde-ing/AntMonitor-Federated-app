@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/nombreapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="false"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+
+            android:textColor="@color/colorPrimaryDark1"
+
+            android:textSize="20dp"
+            android:layout_marginLeft="2dp"
+
+           />
+
+
+
+        <ImageView
+            android:id="@+id/foto_app"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="12dp"
+
+            android:layout_marginLeft="10dp"
+
+
+             />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+    <TextView
+        android:id="@+id/subtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="false"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="2dp"
+        android:textColor="@android:color/black"
+
+        android:textSize="20dp"
+        android:layout_marginLeft="2dp" />
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="false"
+
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="2dp"
+
+        android:textSize="20dp"
+        android:layout_marginLeft="2dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+    <TextView
+        android:id="@+id/resumen_app"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="false"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="2dp"
+
+        android:textColor="@android:color/black"
+
+        android:textSize="20dp"
+        android:layout_marginLeft="2dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <Button
+            android:id="@+id/bien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="6dp"
+
+            android:background="@android:color/holo_green_dark"
+
+
+            android:text="Agree"
+android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:id="@+id/mal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="6dp"
+
+
+            android:background="@android:color/holo_red_dark"
+            android:text="Disagree"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="20dp" />
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/recomendacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="4dp"
+        android:visibility="visible"
+        android:textSize="20dp"
+        android:layout_marginLeft="4dp" />
+    <Button
+        android:id="@+id/button_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="6dp"
+
+
+
+        android:text="Destination info"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp" />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<!--
+  ~  This file is part of AntMonitor <https://athinagroup.eng.uci.edu/projects/antmonitor/>.
+  ~  Copyright (C) 2018 Anastasia Shuba and the UCI Networking Group
+  ~  <https://athinagroup.eng.uci.edu>, University of California, Irvine.
+  ~
+  ~  AntMonitor is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, version 2 of the License.
+  ~
+  ~  AntMonitor is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with AntMonitor. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uci.calit2.federated.client.android.fragment.RealTimeFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="@string/tv_visualization_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <TextView
+            android:text="@string/tv_total_bytes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvByteCount"
+            android:visibility="gone" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="-3dp"
+            android:layout_y="-3dp"
+            android:id="@+id/spinner"
+            android:spinnerMode="dropdown"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/texto_inicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="5dp"
+
+                android:textColor="@color/black"
+                android:text="Before getting the report, please answer some questions in order to know you a bit more so we can fit you better."
+                android:textSize="20dp"
+                android:layout_marginLeft="1dp"
+                />
+            <Button
+                android:id="@+id/quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/buttonColor"
+                android:background="@drawable/stilo_button_redondo"
+                android:text="Answer questions"
+
+                android:layout_marginLeft="110dp" />
+            <TextView
+                android:id="@+id/texto_cuestionario_inicio_aplicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:visibility="gone"
+                android:layout_marginStart="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:text="Please answer some questions about the app expectations and more."
+                android:textSize="20dp"
+                android:layout_marginLeft="1dp"
+                />
+            <Button
+                android:id="@+id/cuestionario_final_aplicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/naranja"
+                android:background="@drawable/stilo_button_redondo"
+                android:text="Answer App and Privacy questions"
+                android:layout_marginLeft="50dp" />
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/visualization_screen" >
+
+            </WebView>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

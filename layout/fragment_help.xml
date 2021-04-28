@@ -1,0 +1,247 @@
+<!--
+  ~  This file is part of AntMonitor <https://athinagroup.eng.uci.edu/projects/antmonitor/>.
+  ~  Copyright (C) 2018 Anastasia Shuba and the UCI Networking Group
+  ~  <https://athinagroup.eng.uci.edu>, University of California, Irvine.
+  ~
+  ~  AntMonitor is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, version 2 of the License.
+  ~
+  ~  AntMonitor is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with AntMonitor. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uci.calit2.federated.client.android.fragment.HelpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="@dimen/cardview_default_radius"
+                app:contentPadding="5dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:cardUseCompatPadding="false"
+                app:cardPreventCornerOverlap="false"
+                android:elevation="2dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/getting_started_header_height"
+                    android:paddingBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_launcher_web"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:text="Federated Machine Learning:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/accent"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:text=""
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/nav_help"
+                            android:layout_marginLeft="15dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="@dimen/cardview_default_radius"
+                app:contentPadding="10dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:cardUseCompatPadding="false"
+                app:cardPreventCornerOverlap="false"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What is FML?"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption.2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <include layout="@layout/horizontal_line_3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Federated Learning enables mobile phones to collaboratively learn a shared prediction model while keeping all the training data on device, decoupling the ability to do machine learning from the need to store the data in the cloud. This goes beyond the use of local models that make predictions on mobile devices (like the Mobile Vision API and On-Device Smart Reply) by bringing model training to the device as well. " />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="@dimen/cardview_default_radius"
+                app:contentPadding="10dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:cardUseCompatPadding="false"
+                app:cardPreventCornerOverlap="false"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How it works?"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption.2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <include layout="@layout/horizontal_line_3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="It works like this: your device downloads the current model, improves it by learning from data on your phone, and then summarizes the changes as a small focused update. Only this update to the model is sent to the cloud, using encrypted communication, where it is immediately averaged with other user updates to improve the shared model. All the training data remains on your device, and no individual updates are stored in the cloud." />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="@dimen/cardview_default_radius"
+                app:contentPadding="10dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:cardUseCompatPadding="false"
+                app:cardPreventCornerOverlap="false"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ML problem:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption.2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <include layout="@layout/horizontal_line_3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Standard machine learning approaches require centralizing the training data on one machine or in a datacenter. That means that for training a model we need to send the information and data to a server so a model can be trained there with all the information from users. This means that regular ML need to have privacy data like phothos, videos or conversations in order to train the models, which it is not a good idea in termns of users privacy." />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="@dimen/cardview_default_radius"
+                app:contentPadding="10dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:cardUseCompatPadding="false"
+                app:cardPreventCornerOverlap="false"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How does FML work in AntMonitor?"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption.2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <include layout="@layout/horizontal_line_3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="AntMonitor uses a ML model in order to classify  the phone apps in 3 different levels according to a privacy risk due to exposed data. This model is trained On Device so when it has been trained for some days, it sends a small update to a server with some model weights variations that does not contain any personal data. When many usesrs sends updates to the server, this will create a new updated model that will be send to the users phones so they can use it." />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="@dimen/cardview_default_radius"
+                app:contentPadding="10dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:cardUseCompatPadding="false"
+                app:cardPreventCornerOverlap="false"
+                android:elevation="2dp">
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

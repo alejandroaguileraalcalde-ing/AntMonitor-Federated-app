@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  This file is part of AntMonitor <https://athinagroup.eng.uci.edu/projects/antmonitor/>.
+  ~  Copyright (C) 2018 Anastasia Shuba and the UCI Networking Group
+  ~  <https://athinagroup.eng.uci.edu>, University of California, Irvine.
+  ~
+  ~  AntMonitor is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, version 2 of the License.
+  ~
+  ~  AntMonitor is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with AntMonitor. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment_privacy_leaks_report"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    tools:context="Federated.anteater.client.android.fragment.PrivacyLeaksReportFragment">
+
+
+    <ScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/Text"
+                            android:textSize="24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="@android:color/black"
+                            android:text="Apps exposure report:"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal" />
+
+                        <Button
+                            android:id="@+id/info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="6dp"
+                        android:visibility="gone"
+                            android:layout_below="@id/Text"
+                            android:backgroundTint="@color/buttonColor"
+                            android:background="@drawable/stilo_button_redondo"
+
+
+                            android:text="Save"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="10dp"
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/Y"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Text"
+                            android:layout_marginStart="2dp"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toEndOf="@id/info"
+                            android:text="For each app, we show below the type of data it shared and information on the organization receiving the data. Please, let us know how you feel about the apps sharing this data by clicking the red (I don't like this) button or not doing anything in case you like the classification made. This information is very valuable for us to improve the app and it can fit you better."
+                                  android:textSize="20dp"
+                            android:visibility="gone"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@id/info" />
+
+
+
+
+
+
+
+
+                        <Button
+                            android:id="@+id/mostrar_resumen_final"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Text"
+                            android:layout_marginTop="8dp"
+                            android:visibility="gone"
+                            android:layout_marginStart="1dp"
+                            android:layout_centerHorizontal="false"
+                            android:backgroundTint="@color/buttonColor"
+                            android:background="@drawable/stilo_button_redondo"
+                            android:text="Show"
+                            android:layout_marginLeft="250dp"
+                           />
+
+                        <ImageView
+                            android:id="@+id/foto_prueba"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/mostrar_resumen_final"
+                            android:layout_marginTop="200dp"
+                            android:layout_marginLeft="170dp"
+                            android:visibility="gone"
+                            android:layout_toRightOf="@id/mostrar_resumen_final" />
+
+                        <Button
+                            android:id="@+id/button_test"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginStart="1dp"
+                            android:layout_below="@id/Text"
+
+                            android:layout_marginTop="8dp"
+                            android:backgroundTint="@color/buttonColor"
+                            android:background="@drawable/stilo_button_redondo"
+                            android:visibility="gone"
+
+                            android:text="Load"
+
+                            android:layout_marginLeft="130dp"
+                        />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/texto_inicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+android:visibility="gone"
+                    android:layout_marginStart="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:text="Before getting the report, please answer some questions in order to know you a bit more so we can fit you better."
+                    android:textSize="20dp"
+                    android:layout_marginLeft="1dp"
+                    />
+                <Button
+                    android:id="@+id/quiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/buttonColor"
+                    android:background="@drawable/stilo_button_redondo"
+                    android:text="Answer questions"
+                    android:layout_marginLeft="110dp" />
+                <TextView
+                    android:id="@+id/texto_cuestionario_inicio_aplicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginStart="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:text="Please answer some questions about the app expectations and more."
+                    android:textSize="20dp"
+                    android:layout_marginLeft="1dp"
+                    />
+                <Button
+                    android:id="@+id/cuestionario_inicial_aplicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/naranja"
+                    android:background="@drawable/stilo_button_redondo"
+                    android:text="Answer App and Privacy questions"
+                    android:layout_marginLeft="50dp" />
+                <Button
+                    android:id="@+id/cuestionario_final_aplicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/naranja"
+                    android:background="@drawable/stilo_button_redondo"
+                    android:text="Answer App and Privacy questions"
+                    android:layout_marginLeft="50dp" />
+                <ProgressBar
+                    android:id="@+id/cargando"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+
+                    android:layout_below="@id/mostrar_resumen_final"
+                    android:layout_marginTop="10dp"/>
+                <ListView
+                    android:id="@+id/lvItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="14dp"
+                    android:layout_below="@id/cargando" />
+
+                <ListView
+                    android:id="@+id/lvItems2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5000dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="14dp"
+                    android:layout_below="@id/lvItems" />
+
+
+                <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent">
+
+                    <Button
+                        android:id="@+id/uploadWeights"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="14dp"
+                        android:layout_centerHorizontal="false"
+                        android:backgroundTint="@color/buttonColor"
+                        android:background="@drawable/stilo_button_redondo"
+                        android:visibility="gone"
+                        android:text="Upload model"
+                        android:layout_marginLeft="14dp" />
+
+                    <Button
+                        android:id="@+id/getModel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="80dp"
+
+                        android:backgroundTint="@color/buttonColor"
+                        android:background="@drawable/stilo_button_redondo"
+                        android:layout_toEndOf="@id/uploadWeights"
+                        android:visibility="gone"
+                        android:text="Download model"
+                        android:layout_marginLeft="80dp"
+                        android:layout_toRightOf="@id/uploadWeights" />
+
+                    <Button
+                        android:id="@+id/primera_vez_servidor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="80dp"
+
+                        android:backgroundTint="@color/buttonColor"
+                        android:background="@drawable/stilo_button_redondo"
+                        android:layout_toEndOf="@id/uploadWeights"
+                        android:visibility="gone"
+                        android:text="primera_vez_servidor"
+                        android:layout_marginLeft="80dp"
+                        android:layout_toRightOf="@id/uploadWeights" />
+                    <Button
+                        android:id="@+id/button_automatico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="80dp"
+
+                        android:backgroundTint="@color/buttonColor"
+                        android:background="@drawable/stilo_button_redondo"
+                        android:layout_toEndOf="@id/uploadWeights"
+                        android:visibility="gone"
+                        android:text="button_automatico"
+                        android:layout_marginLeft="80dp"
+                        android:layout_toRightOf="@id/uploadWeights" />
+
+
+
+                    <TextView
+                        android:id="@+id/Apps_analizadas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="1dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone"
+                        android:text="Apps analyzed: click 'Load' button, then 'Show' for getting the report. After getting one report, please close the app and open it again before getting another report. Check that the 'VPN Logo' is Off before getting the report."
+                        android:textSize="20dp"
+                        android:layout_marginLeft="1dp"
+                      />
+
+
+
+
+                    <ListView
+                        android:id="@+id/privacy_reports_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="2000dp"
+                        android:layout_below="@id/Apps_analizadas"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="15dp"
+
+                        android:scrollbarStyle="outsideInset"
+                        tools:ignore="NotSibling" />
+
+                    <Button
+                        android:id="@+id/button_test2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="80dp"
+                        android:visibility="gone"
+                        android:backgroundTint="@color/buttonColor"
+                        android:background="@drawable/stilo_button_redondo"
+
+
+                        android:text="test2"
+                        android:layout_marginLeft="300dp"
+                        />
+                    <Button
+                        android:id="@+id/getDirIp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="1dp"
+android:visibility="gone"
+
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="@color/buttonColor"
+                        android:background="@drawable/stilo_button_redondo"
+
+
+                        android:text="getDirIP"
+
+                        android:layout_marginLeft="130dp"
+                        />
+
+                    <Button
+                        android:id="@+id/button_test3"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="80dp"
+                        android:text="test2"
+                        android:layout_marginLeft="300dp"
+                        />
+                    <Button
+                        android:id="@+id/buton_guardar"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="80dp"
+                        android:text="test2"
+                        android:layout_marginLeft="300dp"
+                        />
+                    <Button
+                        android:id="@+id/button_test4"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="80dp"
+                        android:text="test2"
+                        android:layout_marginLeft="300dp"
+                        />
+                    <Button
+                        android:id="@+id/button_test5"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="80dp"
+                        android:text="test2"
+                        android:layout_marginLeft="300dp"
+                        />
+                    <Button
+                        android:id="@+id/button_test6"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="80dp"
+                        android:text="test2"
+                        android:layout_marginLeft="300dp"
+                        />
+                    <Button
+                        android:id="@+id/button_test7"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="80dp"
+                        android:text="test2"
+                        android:layout_marginLeft="300dp"
+                        />
+                    <Button
+                        android:id="@+id/button_test8"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="80dp"
+                        android:text="test2"
+                        android:layout_marginLeft="300dp"
+                        />
+                    <Button
+                        android:id="@+id/button_test9"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="80dp"
+                        android:text="test2"
+                        android:layout_marginLeft="300dp"
+                        />
+                    <Button
+                        android:id="@+id/button_test10"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginStart="80dp"
+                        android:text="test2"
+                        android:layout_marginLeft="300dp"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
